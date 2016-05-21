@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+<style>
+		
+/*Sets default margin and padding to 0px*/
+*	{
+	margin:0px;
+	padding:0px;
+}
+
+.body	{		
+	text-align:center;
+	width:100%;
+	display:flex;
+	justify-content: center;
+}
+
+.background		{
+	height: 100%;
+	width: 100%;
+	z-index:1;
+	background-color: black;
+}
+
+/* Ensures all elements are displayed as block elements*/
+header, section, footer, article	{
+	display:block;
+}
+
+/*Styles h tags*/
+h1	{
+	font-family: Tahoma;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h2{
+	font-family: Tahoma;
+	font-size: 20px;
+}
+
+h3	{
+	font: bold Tahoma 16px;
+}
+
+h4	{
+	font-weight:normal;
+}
+
+h5	{
+	font-family:Tahoma;
+	font-size: 15px;
+}
+
+/*Styles ULs*/
+.ul	{
+	width: 100%;
+	display:inline-block;
+	margin-left:1em;
+	padding:40px;
+}
+
+/*Styles Main container*/
+.container	{
+	border:1px solid black;	
+	width:800px;	
+	margin: 10px auto;
+	text-align:left;
+	background-color: aliceblue;
+}
+
+/*Styles topHeader which holds name, title, contact information*/
+#topHeader	{
+	margin-top:25px;
+	text-align: left;
+	padding:10px;	
+
+}
+
+.name	{
+		font-family: Tahoma;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+}
+
+.title	{
+		font-family: Tahoma;
+		font-size: 20px;
+		text-align: center;
+}
+		
+.city	{
+		font-family: Tahoma;
+		font-size: 16px;
+		text-align: center;
+		}
+
+.phone	{
+		font-family: Tahoma;
+		font-size: 16px;
+		text-align: center;
+}
+
+.email	{
+		font-family: Tahoma;
+		font-size: 16px;
+		text-align: center;
+}
+
+.linkedin	{
+		font-family: Tahoma;
+		font-size: 16px;
+		text-align: center;	
+}
+
+/*Styles main section*/
+.mainSection	{
+	width:90%;
+	margin:20px; 
+}
+
+/*Styes summary section*/
+.summary	{	
+	width: 100%;
+	display:inline-block;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin-left:1em;
+	padding:10px;	
+}
+
+/*Styles education section*/
+.education	{
+	width: 100%;
+	display:inline-block;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin-left:1em;
+	padding:10px;
+}
+
+/*Styles accomplishment section*/
+.accomplishments	{
+	width: 100%;
+	display:inline-block;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin-left:1em;
+	padding:10px;
+}
+
+ul	{
+	margin-left:30px;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+/*Styles Programming and Markup Languages*/
+.skills{
+	width: 100%;
+	display:inline-block;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin-left:1em;
+	padding:10px;
+
+}
+
+
+/*Style links*/
+a:link {color:blue; font-weight:bold; text-decoration:none;} /*Sets default color of links to blue, bold, no decoration*/
+a:hover {color:blue; text-decoration:underline;}   /* When link is hovered over, sets color to blue w/underline */
+a:visited {color:purple; text-decoration:none;} /* When link is visited, sets color to purple */
+
+/*Styles each employment position section*/
+.position	{
+	width: 100%;
+	display:inline-block;
+	font-family: Tahoma;
+	font-size: 14px;
+	margin-left:1em;
+	padding:10px;	
+}
+
+ul.snapshot	{
+	font-weight:bold;
+}
+/*Styles the footer*/
+.TheFooter	{
+	clear:both; /*Clears float*/
+		
+	width: 90%;
+	text-align:center;
+	margin-bottom:10px;
+	padding:20px;	
+}
+
+		</style>	
+			<script>
+				// name:   basicPopup(url)
+				// date:   April 2, 2015
+				// author: Michelle Lawson
+				// purpose: Basic popup window to be used in various areas
+				// last edited:
+			
+				function basicPopup(url) {
+				popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+				}
+			</script>
+</head>
+<body><!--Begins page-->
+	<div class="background">
+	<div class="container"><!--Creates main container for page-->
+	
+		<header id="topHeader"><!--Creates title header with name and title-->
+			<!--Creates text that will be contained in the top header. Span is used for name and title to cause them to appear side by side-->
+			<div class="name">
+				Michelle Lawson 
+			</div>			 
+			<div class="title">
+				Web Professional
+			</div>				
+			<div class="city">
+				Bellevue, WA 
+			</div>				
+			<div class="phone">
+				425-791-7387	
+			</div>				
+			<div class="email">
+				CodeMonkeyAtPlay@gmail.com    
+			</div>	
+			<div class="linkedin">
+				Visit me on LinkedIn!
+			</div>    
+		</header>		
+	<section class="mainSection"><!--Creates main section of webpage-->		
+			<h1>Summary</h1>
+				<div class="summary">
+					Driven, accomplished web professional with experience in web content management, writing, coding, editing 
+					and document control. Strong ability to work with teams and multi-task projects under strict deadlines.
+				</div>			
+			<h1>Education</h1>
+				<div class="education"><!--Education Section-->
+					<h4>2011 - 2013:<a href="http://edcc.edu/" onclick="basicPopup(this.href);return false"> Edmonds Community College, Lynnwood, WA</h4></a>
+					Computer Information Systems - <a href="http://catalog.edcc.edu/preview_program.php?catoid=26&amp;poid=6005&amp;returnto=8119http://catalog.edcc.edu/preview_program.php?catoid=26&amp;poid=6005&amp;returnto=8119">
+					Web Application Developer Associate of Technical Arts Degree</a>
+					<ul id="studied">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>PHP</li>
+						<li>JavaScript</li>
+						<li>Database theory and design</li>
+						<li>Project Management</li>
+						<li>General education courses</li>
+					</ul>
+					</div>
+				<div class="education"><!--Education Section-->
+					<h4>2002 - 2004: <a href="http://itt-tech.edu/" onclick="basicPopup(this.href);return false">ITT Technical Institue, Lathrop, CA</h4></a>
+					Information Technology - <a href="http://catalog.edcc.edu/preview_program.php?catoid=44&poid=8613&print" onclick="basicPopup(this.href);return false">
+					Computer Network Systems Associate of Science Degree</a><br /> 	
+					<ul>
+						<li>Network operating systems</li>
+						<li>Networy systems design and implementation</li>
+						<li>Database fundamentals</li>
+						<li>General education courses</li>
+					</ul>
+				</div>					
+				<div class="accomplishments">
+					<h1>Notable Accomplishments</h1>
+					<ul id="accomplishments">
+						<li>Was one of only five students to graduate from a starting class of fifty - ITT Technical Institute</li>
+						<li>Finishing GPA was 3.4, just .1 away from Honors - ITT Technical Institute</li>
+						<li>Help Desk Lead, KB Manager and backup technician for Portland and the SW portion of the US</li>
+						<li>Provided significant input on new help desk software to developers. Traveled to branch offices across the country to train users on use</li>
+						<li>End user training manager; created and presented end user geared trainings each quarter; responsible for all users in all branch offices receiving this training - Tetra Tech </li>
+					</ul>				
+				</div>
+				
+				<div class="skills"><h1>Programming and Markup Languages</h1>
+					<ul class="languages"> 
+					    <li>HTML5</li>
+						<li>CSS3</li>	
+           				<li>JavaScript</li>
+           				<li>PHP</li>					
+					</ul>
+				</div>
+          		<div class="skills"><h1>Applications</h1>
+					<ul class="Apps"> 
+					    <li>InDesign</li>
+						<li>Sharepoint, Limelight CMS</li>	
+           				<li>Dreamweaver</li>
+           				<li>PhotoShop</li>
+           			</ul>           	
+           		</div>
+				<div class="skills"><h1>Technical Expertise</h1>
+					<ul class="Expertise">
+           				<li>Windows OS</li>
+						<li>Group Policy</li>
+						<li>Norton Ghost</li>
+						<li>VOIP</li>
+						<li>Altiris</li>
+						<li>Document Control</li>
+           				<li>MS Office Suite</li>
+           				<li>Active Directory</li>
+           				<li>SCCM</li>
+           				<li>Remote Desktop</li>
+           				<li>Network Print Management</li>
+					</ul>
+				</div>
+				<h1>Practical Experience</h1>				
+				<div class="position">
+					<h3>Web Producer/Content Manager</h3>
+					<h4>January 2013 - March 2015</h4>
+					<h4><a href="http://allyis.com/" onclick="basicPopup(this.href);return false">Allyis</a>, Kirkand, WA</h4>
+					<ul class="snapshot">
+						<li>Website content management</li>
+						<li>Website editing</li>
+						<li>multi-departmental communication and collaboration</li>
+					</ul>
+						Functioning as subject matter expert of an internal Microsoft sales website, consulted with salespeople on their requested changes
+						to their webpages. Provided input to create the most effective content, adhering to standards to maintain consistency in look, feel
+						and efficiency of webpages. 
+				</div>
+				
+				<div class="position">
+					<h3>Web Producer/Content Manager</h3>
+					<h4>January 2013 - March 2015</h4>
+					<h4><a href="http://www.davesmovingservice.biz/" onclick="basicPopup(this.href);return false">Dave's Moving Service</a>, Auburn, WA</h4>
+					<ul class="snapshot">
+						<li>Website production and content management</li>
+						<li>Writing and editing copy</li>
+					</ul>
+						Conceptualized and built website, managed content. Edited and published copy provided by company owner to website. Created customer facing 
+						promotional material and emails. Worked with marketing vendors to increase effectiveness of website. Embedded promotional videos provided by 
+						marketing vendor. Authored marketing emails for potential customers.					     				
+				</div>		
+				<div class="position">
+					<h3>Business Planner, Writer, Editor</h3>
+					<h4>January 2013 - March 2015</h4>
+					<h4>IT Alchemy, Auburn, WA</h4>
+					<ul class="snapshot">
+						<li>Writing</li>
+						<li>Composing business plan</li>
+						<li>Editing</li>
+						<li>Marketing</li>
+					</ul>				
+						Authored, edited and finalized company business plan. Worked closely with owner to define mission statement and customer service philosophy. 
+						Wrote customer-geared marketing material and emails. Edited documentation provided by company owner. Worked closely with marketing vendors 
+						to develop sales strategy.
+				</div>
+				<div class="position">
+					<h3>Front End Web Developer/Content Manager</h3>
+					<h4>September 2013 - November 2013</h4>
+					<h4><a href="http://local.adeccousa.com/locations/Washington/Bellevue-98004" onclick="basicPopup(this.href);return false">Adecco Technical Staffing,</a> Bellevue, WA</h4>				
+					<ul class="snapshot">
+						<li>Website content management</li>
+						<li>Editing</li>
+						<li>Multi-departmental communication and collaboration</li>
+					</ul>
+						Contributed to a strong web team updating 55+ sites in 23+ languages in a fast-paced environment with tight deadlines. Worked with other departments to ensure accurate 
+						and timely delivery of jobs. Commended for learning CMS quickly and working efficiently. Commended for attendance.
+					</div>
+			
+				<div class="position">
+					<h3>Client Technology Solutions Analyst</h3>
+					<h4>October 2009 - June 2011</h4>					
+					<h4><a href="http://www.northwest.ca/" onclick="basicPopup(this.href);return false">The Northwest Company International,</a> Bellevue, WA</h4>
+					<ul class="snapshot">
+						<li>Technical support</li>
+						<li>training</li>
+						<li>Multi-departmental communication</li>
+					</ul>
+						Supported, imaged and configured Dell and HP desktops, laptops, multi-function printers and software such as Quickbooks, InDesign, Photoshop, 
+						Cisco VPN, MS Office Suite 2003/2010 and company specific software in one Bellevue office and one Tacoma office. Imaged, transported, setup, 
+						and maintained all computers in new office Tacoma. Met users on their first day and performed initial IT training for both offices. 
+						Trained self on installation and use of newly purchased timeclock and security camera software and hardware. Installed and configured same. 
+						Trained managers on use; ie connecting to computer running the software from their workstations and running reports. Acted as first point of 
+						contact for several travelling executives and six remote offices across the country. Active Directory administration and SCCM administration; 
+						granted rights to network resources, created/managed GPOs and local computer policy. Consistently earned above average performance reviews. 
+						Consistently commended for exceptional work and customer service.
+				</div>						
+				<div class="position">
+					<h3>End User Support Technician</h3>
+					<h4>March 2005 - August 2009</h4>
+					<h4><a href="http://tetratech.com/" onclick="basicPopup(this.href);return false">Tetra Tech,</a> Bothell, WA</h4>
+					<ul class="snapshot">
+						<li>Technical writing and editing</li>
+						<li>training material creation</li>
+						<li>Documentation</li>
+						<li>Document control</li>
+					</ul>
+						Working closely with manager, monitored custom Incident Management System to ensure all team members met required SLAs. Commended for excellent 
+						End User Support of laptops, desktops, VOIP, printers and various software and hardware. Created and led end user trainings. Worked with teams to 
+						develop, document and implement policies and procedures. Maintained end user facing knowledgebase and Quickpoint (document sharing Lotus Notes application). 
+						Imaged computers using IBM and Altiris imaging tools. Managed security certificates for Lotus Notes email system. Commended for quality of work, customer 
+						service, professionalism and attendance.
+				</div>
+	</section>
+	</div>
+	</div>
+	
+</body>
+
+</html>
